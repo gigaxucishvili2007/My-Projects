@@ -1,0 +1,37 @@
+function eigthLetterFunction(){
+    const box = document.getElementById("boxLatters");
+    const EightLetter = document.getElementById("eightLetter");
+
+    let isOpen = false; // ამით ვაკონტროლებთ არის თუ არა ღია ყუთი
+    const EigthtLetterOBJ = {
+        Aletters: {
+
+        }
+    }
+
+    EightLetter.addEventListener("click",function(){
+        isOpen = !isOpen; // ყოველ ჯერზე გადავრთავთ ღია/დახურული სტატუსს
+        // თუ ყუთი ღიაა, მაშინ ვამატებთ ელემენტებს
+        if (isOpen) {
+        // ყუთის გახსნა
+        box.style.width = "250px";
+        box.style.height = "auto";
+        box.style.backgroundColor = "grey";
+
+        box.innerHTML = ""; // ჯერ ვასუფთავებთ ყუთს რომ არ დაგროვდეს ელემენტები
+        for(let i = 1; i <= 200; i++) { // i ერთით იმიტო იწყება რომ ობიექტშში გვაქვს [1]
+            const el = document.createElement("div");
+            el.innerHTML = EigthtLetterOBJ.Aletters[`letter${i}`]; // აქ ეს letter უტოლდება i - ს, ამ i ში ინახება რიცხვები 1 იდან (მაგ:) 10მდე და შემდეგ ეს letter გამოდის ესე, letter1, letter2 და ასშ
+            box.appendChild(el); // დავამატეთ
+        }
+
+        } else {
+            // ყუთის დახურვა
+            box.style.width = "0"; 
+            box.style.height = "0";
+            box.style.backgroundColor = "transparent"; // უკანა ფონის ნაირი რო იყოს;
+            box.innerHTML = ""; // მოვაშოროთ ელემენტები
+        }
+    })
+}
+eigthLetterFunction()

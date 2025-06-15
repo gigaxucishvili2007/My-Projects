@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background: #e0f7fa;
+    /* Dark mode background: #121212 */
+}
+
+#main-div{
+    width: 950px;
+    height: 125px;
+    background-color: maroon;
+    position: relative;
+    left: 470px;
+    border-radius: 5px;
+    /* infinite - უსასრულო */
+}
+
+#Dictionary{
+    width: 75px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#Dictionary-name{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    top: -10px;
+}
+
+#english-georgian-dictionary{
+    position: relative;
+    left: 295px;
+    top: -55px;
+    color: white;
+    font-size: 1.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#word-translate-div{
+    width: 325px;
+    height: 68px;
+    position: relative;
+    left: 683px;
+    top: -29.6px;
+    border-radius: 10px;
+}
+
+#find-word-input{
+    border: solid maroon 1px;
+    height: 20px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+
+}
+
+#find{
+    color: white;
+    background-color: maroon;
+    position: relative;
+    top: -1px;
+    left: 3px;
+    width: 80px;
+}
+
+#first-variant{
+    position: relative;
+    top: 35px;
+    left: -280px;
+}
+
+#full-text-translate{
+    color: maroon;
+    position: relative;
+    left: 48px;
+    top: -4px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#exactly-text{
+    position: relative;
+    left: 120px;
+    top: -48px;
+}
+
+#variant-2-exactly-text{
+    color: maroon;
+    position: relative;
+    left: 143px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: -80px;
+}
+
+#alphabet{
+    color: maroon;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    width: 210px;
+    height: 32px;
+    border: 2px solid rgb(124, 14, 14);
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    background: #e0f7fa;
+}
+::placeholder {
+    padding-left: 50px;
+}
+
+#alphabet1{
+    color: maroon;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 480px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+
+#boxLatters {
+    position: absolute;
+    left: 470px;
+    top: 220px;
+    padding-left: 35px;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#resultBox{
+    color: white;
+    background-color: maroon;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    left: 1px;
+    top: -25px;
+
+    height: auto;
+    box-shadow: 2 6px 17px rgb(0, 0, 0);
+    top: 65px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+#translateTo-English{
+    color: white;
+    background-color:brown;
+    width: 55px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+#translateTo-Georiga{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 237);
+    border: none;
+    border-radius: 7px;
+    width: 60px;
+    height: 25px;
+    color: white;
+}
+
+#translateTo-Georiga:hover{
+    background-color: brown;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#translateTo-English {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 237);
+    border: none;
+    border-radius: 7px;
+    width: 60px;
+    height: 25px;
+    color: white;
+}
+
+#translateTo-English:hover{
+    background-color: brown;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        margin-left: -350px
+    }
+    .containerButtons {
+        top: 200px;
+    }
+    .containerDarkLigthMode {
+        margin-left: -350px;
+    }
+}
+
+#dark{
+    width: 25px;
+    position: relative;
+    left: 1343px;
+    top: -163px;
+}
+
+#light{
+    width: 25px;
+    position: relative;
+    left: 1355px;
+    top: -163px;
+}
+
+#dark:hover, #light:hover {
+    cursor: pointer;
+}
+
+#abandonThemathic{
+    width: 430px;
+    height: 450px;
+    background-color: maroon;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#AbilityThemathic{
+    width: 430px;
+    height: 450px;
+    background-color: maroon;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.5px;
+    position: relative;
+    left: 480px;
+    top: -448px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#AbleThemathic{
+    width: 430px;
+    height: 450px;
+    background-color: maroon;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.5px;
+    position: relative;
+    left: 955px;
+    top: -895px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#AboutThematic{
+    width: 430px;
+    height: auto;
+    background-color: maroon;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.5px;
+    position: relative;
+    left: 1420px;
+    top: -1340px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#AboveThematic{
+    width: 430px;
+    height: auto;
+    background-color: maroon;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.5px;
+    position: relative;
+    left: 1450px;
+    top: -1200px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#AbroadThematic{
+    width: 430px;
+    height: auto;
+}
+
+#თემატიკა{
+    background-color: rgb(127, 1, 2);
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    position: relative;
+    left: 480px;
+    font-size: 1.3em;
+    top: -20px;
+}
+
+#ქვიზები{
+    background-color: rgb(127, 1, 2);
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    position: relative;
+    left: 520px;
+    font-size: 1.3em;
+    top: -20px;
+}
+
+#word-list{
+    width: 241px;
+    height: 650px;
+    background-color: maroon;
+    position: relative;
+    left: 1190px;
+    top: -23px;
+    border-radius: 5px;
+}
+
+#word-thematic{
+    width: 385px;
+    height: 585px;
+    background-color: maroon;
+    position: relative;
+    top: -600px;
+    left: 330px;
+    border-radius: 8px;
+}
